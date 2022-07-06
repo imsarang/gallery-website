@@ -1,0 +1,171 @@
+
+:root{
+    --speed : 500ms;
+}
+
+#navbar{
+    padding:10px;
+    /* position: fixed; */
+    
+}
+/* .dropdown-menu{
+    display:block;
+    position:relative
+} */
+.navbar-brand{
+    padding-left:20px;
+}
+#nav-brand-pic{
+    width:40px;
+}
+.toggle-nav-btn{
+    float:right;
+}
+
+nav{
+    background-color: rgb(15, 25, 36);
+}
+.nav-link{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.d-text{
+    position:relative;
+    margin-left:10%;
+    /* margin-right:10px; */
+}
+.d-item{
+    display:flex;
+    text-align: right;
+    /* border: 1px solid yellow; */
+    padding:2%;
+    margin:2%;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index:1
+}
+.d-item .nav-link{
+    padding-right:5%;
+    padding-top:2%;
+    width:100%;
+    text-align: right;
+    outline: none;
+    color:white;
+}
+
+.d-item .nav-link:hover{
+    border:none;
+
+}
+
+.d-left{
+    padding: 5%;
+    text-align: center;
+}
+.left_caret{
+    width:5%;
+    height: 5%;
+    color:white;
+}
+.nav-link,.navbar-brand{
+    color: aliceblue;
+}
+.navbar-toggler{
+    outline:none;
+    border:2px solid white;
+}
+.nav-link:hover{
+    color:rgb(238, 159, 13);
+    border:1px solid orange;
+    border-radius: 10px;
+    /* transition: 1.2s; */
+}
+
+
+.dropdown-menu{
+    background-color: rgb(40, 40, 43);
+    
+    border-radius:5px;
+    position: relative;
+    left:-175%;
+    text-align: right;
+    box-shadow: 5px 5px 10px rgb(113, 118, 153);
+
+}
+
+
+.d-item:hover{
+    background-color: black;
+    color:white
+}
+.dropdown:hover{
+    color:rgb(238,159,13);
+    /* border:3px solid orange; */
+    border-radius: 10px;
+    /* transition: 1.2s; */
+}
+/* .navbar-toggler i{
+    color:white;
+    
+    padding:5px;
+} */
+
+
+/* dropdown animations */
+.menu-primary-enter{
+    
+    transform: translateX(-110%);
+    overflow: hidden;
+}
+
+.menu-primary-enter-active{
+    transform: translateX(0%);
+    transition: all var(--speed) ease;
+    overflow: hidden;
+}
+
+.menu-primary-exit{
+    overflow: hidden;
+}
+
+.menu-primary-exit-active{
+    transform: translateX(-110%);
+    overflow: hidden;
+}
+
+.menu-secondary-enter{
+    overflow: hidden;
+    transform: translateX(110%);
+    transition: all var(--speed) ease;
+}
+
+.menu-secondary-enter-active{
+    transform: translateX(0%);
+    overflow: hidden;
+}
+
+.menu-secondary-exit{
+   overflow: hidden;
+}
+
+.menu-secondary-exit-active{
+    transform: translateX(110%);
+    transition: all var(--speed) ease;
+    overflow: hidden;
+}
+
+
+
+@media screen and (max-width:991px){
+    .d-item{
+        height: 1%;
+        border:1px solid white;
+    }
+    .dropdown-menu{
+        background-color: rgb(35, 35, 43);
+    }
+    .dropdown{
+        border:none;
+    }
+}

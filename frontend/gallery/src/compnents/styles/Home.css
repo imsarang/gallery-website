@@ -1,0 +1,11 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+.parent{
+    overflow:auto;
+    /* background-color:rgb(2, 2, 87); */
+    background-color: rgb(250, 251, 252);
+}
+
