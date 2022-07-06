@@ -1,0 +1,56 @@
+/* .gallery_main{
+    column-count:3;
+    column-gap:10px;
+    row-gap: 2px;
+    
+    background-color: rgb(246, 237, 237);
+    
+    padding-top:0.5%;
+    padding-left:0.5%;
+    padding-right:0.5%;
+}
+
+.gallery_main img{
+    max-width:100%;
+    height:auto;
+    
+    box-sizing: border-box;
+    margin-bottom:10px;
+    position: relative;
+} */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Luckiest+Guy&family=Merriweather&family=Mochiy+Pop+P+One&family=Mulish:wght@300&family=Oswald:wght@300;400&family=Raleway:wght@500&family=Roboto+Slab&display=swap');
+
+.no-image{
+    font-family: 'Luckiest Guy';
+    text-align: center;
+    font-size: 100px;
+}
+.gallery_main{
+    width:100%;
+    min-height:100%;
+    display:flex;
+    margin-top:1%;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap:wrap;
+}
+.column{
+    width:30%;
+    position:relative;
+    margin:1%;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.column:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+
+@media screen and (max-width:500px){
+    .column{
+        width:100%;
+    }
+}

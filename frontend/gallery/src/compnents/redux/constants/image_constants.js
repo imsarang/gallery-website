@@ -1,0 +1,5 @@
+export const IMAGE_UPLOAD = "IMAGE_UPLOAD"
+export const IMAGE_REMOVE = "IMAGE_REMOVE"
+export const IMAGE_DISPLAY = "IMAGE_DISPLAY"
+
+
