@@ -62,7 +62,7 @@ const userSchema = new mongoose.Schema({
         type:String,
         required:true,
         minLength:[8,"Password should have minimum 8 characters"],
-        maaxLength:[20,"Password should have maximum 20 characters"],
+        maxLength:[20,"Password should have maximum 20 characters"],
         unique:true
     },
 
